@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bfc3ef21f1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/style.css">
+    <link rel="stylesheet" href="./public/form.css">
+    <title>Online Book</title>
+</head>
+<style>
+
+    .menu{
+        list-style-type: none;
+    }
+
+    .menu li{
+        display:inline-block;
+        background-color: red;   
+        padding: 10px;    
+    }
+
+    a{
+        text-decoration: none;
+    }
+    
+    .sub-menu{
+        position: absolute;       
+        display: none;
+    }
+
+    .sub-menu li{
+        display: block;
+    }
+
+    .menu li:hover .sub-menu{
+        margin-top: 11px;
+        display:block;
+        animation: show 1s ease-in-out;
+    }
+
+    @keyframes show {
+        0%{
+            /* transition: .2s ease-in-out; */
+            transform: translateY(-.9em);
+        }
+        /* 100%{
+            transition: .2s ease-in-out;
+            transform: translateY(-10px);
+        } */
+    }
+</style>
+<body>
+    <!-- <ul class="menu">
+        <li><a href="#">item 1</a>
+            <ul class="sub-menu">
+                <li><a href="#">one</a></li>
+                <li><a href="#">two</a></li>
+                <li><a href="#">three</a></li>
+            </ul>
+        </li>
+        <li><a href="#">item 2</a>
+        <ul class="sub-menu">
+                <li><a href="#">one</a></li>
+                <li><a href="#">two</a></li>
+                <li><a href="#">three</a></li>
+            </ul>
+        </li>
+    </ul> -->
+    <!-- <form action="" method="post">
+        <div class="co-container">
+            <h1>Let Me Know What You Wanna Suggest!</h1>
+            <div class="contact-field">
+            <label for="name">Your Name</label><br>
+            <input type="text" name="name" id="name" placeholder="enter your name" autocomplete="off">
+        </div>
+        <div class="contact-field">
+            <label for="email">Your Email</label><br>
+            <input type="email" name="email" id="email" placeholder="enter an valid email" autocomplete="off">
+        </div>
+        <div class="contact-field">
+            <textarea name="message" id="message" cols="131" rows="3">message</textarea>
+        </div>
+        <div class="contact-field">
+            Male <input type="radio" name="gender" id="male" value="male" checked>
+            Female <input type="radio" name="gender" id="female" value="female">
+        </div><br>
+            <button type="submit" id="btn">Submit To Developer</button>
+        </div>
+    </form> -->
+    <div class="container">
+        <nav>
+            <ul>
+                <li><a href="#">Price Lists</a>
+                    <ul>
+                        <li><a href="">$50</a></li>
+                        <li><a href="">$100</a></li>
+                        <li><a href="">$150</a></li>
+                        <li><a href="">$200</a></li>
+                        <li><a href="">$300</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Caticatories</a>
+                    <ul>
+                        <li><a href="#">Ice-cream</a></li>
+                        <li><a href="#">Barkers</a></li>
+                        <li><a href="#">Donuts</a></li>
+                        <li><a href="#">Jelly</a></li>
+                        <li><a href="#">Humbercars</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">shopname</a></li>
+                <li><a href="#">Feedback</a></li>
+                <li><a href="#">logoimg</a></li>
+            </ul>
+        </nav>
+        <main>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span>
+                    <span class="ord">ord</spand=>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span class="ord">Ord</span >
+                </div>
+            </div>
+        </main>
+        <main>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+        </main>
+        <main>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+        </main>
+        <main>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+            <div class="card">
+                <img src="./public/images/book.jpeg" alt="book">
+                <div class="reaction">
+                    <span><img src="./public/images/icons8-love-potion-48.png" width="48px" height="48px"></span></span>
+                    <span  class="ord">Ord</span >
+                </div>
+            </div>
+        </main>
+        <footer>
+            <small>Copyrights &copy; 2022.All rights reserved.</small>
+        </footer>
+        <div class="contants"></div>
+    </div> 
+    <script src="./public/images/jquery.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("span").click(function (){
+                $(this).children('img').attr('src','./public/images/icons8-love-potion.gif');
+            });
+            const contants = document.querySelector('.contants');
+    const ord = document.querySelector('.ord');
+let count = 0;
+const toastFun = () => {
+    count++;
+    contants.innerHTML = '';
+    const toastAlert = document.createElement('div');
+    toastAlert.innerHTML = `You have been ordered.Thanks! <span>${count}</span>`;
+    toastAlert.classList.add('toast');
+    contants.append(toastAlert);
+    toastAlert.style.bottom = `-${toastAlert.offsetHeight}px`;
+    setTimeout(() => {
+        toastAlert.style.bottom = `0px`;
+    }, 100);
+    setTimeout(() => {
+        toastAlert.style.bottom = `-${toastAlert.offsetHeight}px`;
+    }, 2000);
+    }
+            $('.ord').click(function () {
+                toastFun();
+                $(this).html('');
+                $(this).wrapInner('<i class="fas fa-plus-circle" style="color:green;" title="order more?"></i>');
+            });
+        });        
+    </script>
+</body>
+</html>

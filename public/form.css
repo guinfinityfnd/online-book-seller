@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+form{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.co-container{
+    background:linear-gradient(#e3e3e3,#333446);
+    margin: 10% auto;
+    max-width: 80%;
+    height: auto;
+}
+
+h1{
+    text-align: center;
+}
+
+.contact-field{
+    padding: 5px;
+}
+
+.contact-field input{
+    padding: 15px;
+    caret-color: red;
+    outline: none;
+}
+
+textarea{
+    outline: none;
+    caret-color: red;
+}
+
+#male{
+    margin-right: 20px;
+}
+
+#btn{
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    color: rgb(255, 2, 2);
+    cursor: pointer;
+}

@@ -1,0 +1,148 @@
+*{
+    margin:0;
+    padding:0
+}
+
+body{
+    box-sizing: border-box;
+    background-color: #302e2e;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+}
+
+.container{
+    position: static;
+    max-width: 95%;
+    margin:auto;
+}
+
+nav{
+    line-height: 3em;
+    border-bottom: 1px solid red;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-around;
+}
+
+li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li ul{
+    display: block;
+    position: absolute;
+    background-color: greenyellow;
+}
+
+nav ul li ul li{
+    list-style-type: none;
+    padding: 5px 50px;
+    display: none;
+    border-bottom: 1px solid gray;
+}
+
+ul li ul li a{
+    color: red;
+}
+
+ul li:hover ul li{
+    display: block;
+    -webkit-animation: show 1s ease-in-out;
+            animation: show 0.9s ease-in-out;
+}
+
+@-webkit-keyframes show {
+    0%{
+        transform: translateY(-.9em);
+    }
+}
+
+@keyframes show {
+    0%{
+        transform: translateY(1.7em);
+    }
+}
+
+/* logo-image */
+ul li:last-child>img{
+    width: 43px;
+    height: 43px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+    margin: -16px 0;
+}
+
+nav>ul>li:nth-child(4)>a{
+    color: gold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+}
+
+.card{
+    max-width: 200px;
+    margin-top: 5px;
+}
+
+.card img{
+    max-width: inherit;
+}
+
+.reaction{
+    display:flex;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    line-height: 1.5em;
+    margin-top: -4px;
+}
+
+.reaction span:hover{
+    /* color: rgb(0, 255, 13); */
+    cursor: pointer;
+}
+
+.ord{
+    line-height: 2.9em;
+    text-transform: capitalize;
+}
+
+footer{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 2em;
+    background-color: khaki;
+}
+
+.contants{
+    width: 95%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.toast{
+    background-color: rgb(236, 253, 0);
+    line-height: 2.5em;
+    position: relative;
+    transition: bottom .4s ease-in-out;
+    padding:5px 10px;
+}
+
+.toast > span{
+    color: rgb(255, 0, 0);
+    padding: 0 30px;
+}

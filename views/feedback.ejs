@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Feedbackform</title>
+</head>
+<body>
+    <%- include('../partals/nav.ejs') %>
+    <form action="/" method="post">
+        <div class="co-container">
+            <h1>Let Me Know What You Wanna Suggest!</h1>
+            <div class="contact-field">
+            <label for="name">Your Name</label><br>
+            <input type="text" name="name" id="name" placeholder="enter your name" autocomplete="off">
+            <div class="name-err" style="color: red; font-style: italic;"></div>
+        </div>
+        <div class="contact-field">
+            <label for="email">Your Email</label><br>
+            <input type="email" name="email" id="email" placeholder="enter an valid email" autocomplete="off">
+            <div class="email-err" style="color:red; font-style: italic;"></div>
+        </div>
+        <div class="contact-field">
+            <textarea name="message" id="message" cols="131" rows="3">message</textarea>
+            <div class="message-err" style="color:red; font-style: italic;"></div>
+        </div>
+        <div class="contact-field">
+            Male <input type="radio" name="gender" id="male" value="male" checked>
+            Female <input type="radio" name="gender" id="female" value="female">
+        </div><br>
+            <button type="submit" id="btn">Submit To Developer</button>
+        </div>
+    </form>
+    <%- include('../partals/footer.ejs') %>
+    <script>
+        const form = document.querySelector('form');
+        const btn = document.querySelector('#btn');
+        const name = document.querySelector('#name');
+        const email = document.querySelector('#email');
+        const message = document.querySelector('#message');
+        const nameErr = document.querySelector('.name-err');
+        const emailErr = document.querySelector('.email-err');
+        const messageErr = document.querySelector('.message-err');
+
+        form.addEventListener('submit',(e)=>{
+            if (name.value === '') {                
+                const warn = 'please fill your name!';
+                nameErr.innerHTML = warn;
+            e.preventDefault();          
+            }else if (email.value === '') {
+                const warnOne = 'please fill your email!'
+                emailErr.innerHTML = warnOne;
+                e.preventDefault();          
+            }else if (message.value === '') {
+                const warnTwo = 'please enter your comments';
+                messageErr.innerHTML = warnTwo;
+                e.preventDefault();          
+            }
+        });
+    </script>
+</body>
+</html>
