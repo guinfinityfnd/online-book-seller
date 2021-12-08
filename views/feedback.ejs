@@ -4,27 +4,29 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/bfc3ef21f1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="form.css">
     <title>Feedbackform</title>
 </head>
 <body>
+    <div class="container">
     <%- include('../partals/nav.ejs') %>
     <form action="/" method="post">
         <div class="co-container">
             <h1>Let Me Know What You Wanna Suggest!</h1>
             <div class="contact-field">
             <label for="name">Your Name</label><br>
-            <input type="text" name="name" id="name" placeholder="enter your name" autocomplete="off">
+            <input type="text" name="name" id="name" placeholder="enter your name">
             <div class="name-err" style="color: red; font-style: italic;"></div>
         </div>
         <div class="contact-field">
             <label for="email">Your Email</label><br>
-            <input type="email" name="email" id="email" placeholder="enter an valid email" autocomplete="off">
+            <input type="email" name="email" id="email" placeholder="enter an valid email">
             <div class="email-err" style="color:red; font-style: italic;"></div>
         </div>
         <div class="contact-field">
-            <textarea name="message" id="message" cols="131" rows="3">message</textarea>
+            <textarea name="message" id="message" cols="124" rows="3">message</textarea>
             <div class="message-err" style="color:red; font-style: italic;"></div>
         </div>
         <div class="contact-field">
@@ -35,6 +37,7 @@
         </div>
     </form>
     <%- include('../partals/footer.ejs') %>
+    </div>
     <script>
         const form = document.querySelector('form');
         const btn = document.querySelector('#btn');

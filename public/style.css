@@ -115,6 +115,10 @@ main{
 }
 
 .ord{
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
     line-height: 2.9em;
     text-transform: capitalize;
 }
