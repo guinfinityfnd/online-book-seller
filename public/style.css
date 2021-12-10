@@ -105,12 +105,25 @@ main{
     display:flex;
     justify-content: space-around;
     background-color: rgb(255, 255, 255);
-    line-height: 1.5em;
+    line-height: 3.5em;
     margin-top: -4px;
 }
 
+.ordandbadge{
+    display: block;
+}
+
+/* badge  */
+.badge{
+    display: none;
+    border: none;
+    outline: none;
+    padding: 2px;
+    color: rgb(255, 4, 4);
+    width: 15px;
+}
+
 .reaction span:hover{
-    /* color: rgb(0, 255, 13); */
     cursor: pointer;
 }
 
