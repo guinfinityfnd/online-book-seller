@@ -33,7 +33,9 @@
             Male <input type="radio" name="gender" id="male" value="male" checked>
             Female <input type="radio" name="gender" id="female" value="female">
         </div><br>
+        <div class="btn">
             <button type="submit" id="btn">Submit To Developer</button>
+        </div>
         </div>
     </form>
     <%- include('../partals/footer.ejs') %>
@@ -50,11 +52,11 @@
 
         form.addEventListener('submit',(e)=>{
             if (name.value === '') {                
-                const warn = 'please fill your name!';
+                const warn = 'please, your name!';
                 nameErr.innerHTML = warn;
             e.preventDefault();          
             }else if (email.value === '') {
-                const warnOne = 'please fill your email!'
+                const warnOne = 'please, your email!'
                 emailErr.innerHTML = warnOne;
                 e.preventDefault();          
             }else if (message.value === '') {

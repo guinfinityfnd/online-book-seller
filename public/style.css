@@ -108,13 +108,9 @@ main{
     line-height: 3.5em;
     margin-top: -4px;
 }
-
-.ordandbadge{
-    display: block;
-}
-
 /* badge  */
 .badge{
+    font-weight: bold;
     display: none;
     border: none;
     outline: none;

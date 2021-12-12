@@ -68,27 +68,30 @@
             </ul>
         </li>
     </ul> -->
-    <!-- <form action="" method="post">
+    <form action="" method="post">
         <div class="co-container">
             <h1>Let Me Know What You Wanna Suggest!</h1>
             <div class="contact-field">
-            <label for="name">Your Name</label><br>
-            <input type="count-item" name="name" id="name" placeholder="enter your name" autocomplete="off">
+                <label for="name">Your Name</label><br>
+                <input type="text" name="name" id="name" placeholder="John Doe!" autocomplete="off">
         </div>
         <div class="contact-field">
             <label for="email">Your Email</label><br>
-            <input type="email" name="email" id="email" placeholder="enter an valid email" autocomplete="off">
+            <input type="email" name="email" id="email" placeholder="example@John Doe!.com" autocomplete="off">
         </div>
         <div class="contact-field">
-            <count-itemarea name="message" id="message" cols="131" rows="3">message</count-itemarea>
+            <label for="message">Your Comments!</label>
+            <textarea name="message" id="message" cols="131" rows="3">message</textarea>
         </div>
         <div class="contact-field">
             Male <input type="radio" name="gender" id="male" value="male" checked>
             Female <input type="radio" name="gender" id="female" value="female">
         </div><br>
+        <div class="btn">
             <button type="submit" id="btn">Submit To Developer</button>
+        </div><br>
         </div>
-    </form> -->
+    </form>
     <div class="container">
         <nav>
             <ul>
@@ -274,7 +277,7 @@
         </footer>
         <div class="contants"></div>
     </div> 
-    <script src="./public/images/jquery.js"></script>
+    <script src="./views/jquery.js"></script>
     <script>
         ////
     $(document).ready(function(){
@@ -304,7 +307,7 @@ const toastFun = () => {
                 let parent = $(this).parent();
                 let input = $('input',parent).val();
                 let x = parent.find('.one');
-                x.css('display','block');
+                x.css('display','inline');
                 $(x).val(++input);
                 // toastFun();
                 $(this).html('');

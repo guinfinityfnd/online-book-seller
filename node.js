@@ -2,16 +2,16 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const app = express();
+const fs = require('fs');
 
 const port = process.env.PORT || 3000;
 
-//mogodatabase connection 
+mogodatabase connection 
 const url = 'mongodb+srv://virtualnetwork:mogodatabasepassword@cluster0.rfszu.mongodb.net/netnija?retryWrites=true&w=majority';
 mongoose.connect(url)
     .then((result) => app.listen(port))
     .catch((err) => { console.log(err); });
     console.log(`server is running on ${port}`)
-
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
@@ -35,6 +35,7 @@ app.post('/', (req, res) => {
     console.log(req.body);
 });
 
-app.use((req, res) => { //To show if up program has some error while showing result
+//To show if up program has some error while showing result
+app.use((req, res) => {
     res.status(404).render('404');
 })
