@@ -8,42 +8,25 @@
         <%- include('../partals/footer.ejs') %>
         <div class="contants"></div>
     </div>
-       <script src="./views/jquery.js"></script>
-<script>
-    $(document).ready(function () {
-        $("span").click(function (){
-            // $(this).children('img').addClass('affect');
-                $(this).children('img').attr('src','./images/icons8-love-48.png');
-        });
-         const contants = document.querySelector('.contants');
+<!-- <script>
+    const contants = document.querySelector('.contants');
     const ord = document.querySelector('.ord');
-let count = 0;
-const toastFun = () => {
-    count++;
-    contants.innerHTML = '';
-    const toastAlert = document.createElement('div');
-    toastAlert.innerHTML = `You have been ordered.Thanks! <span>${count}</span>`;
-    toastAlert.classList.add('toast');
-    contants.append(toastAlert);
-    toastAlert.style.bottom = `-${toastAlert.offsetHeight}px`;
+    let count = 0;
+    const toastFun = () => {
+        count++;
+        contants.innerHTML = '';
+        const toastAlert = document.createElement('div');
+        toastAlert.innerHTML = `You have been ordered.Thanks! <span>${count}</span>`;
+        toastAlert.classList.add('toast');
+        contants.append(toastAlert);
+        toastAlert.style.bottom = `-${toastAlert.offsetHeight}px`;
     setTimeout(() => {
         toastAlert.style.bottom = `0px`;
     }, 100);
     setTimeout(() => {
         toastAlert.style.bottom = `-${toastAlert.offsetHeight}px`;
     }, 2000);
-    } 
-    $('.ord').click(function () {
-                 let parent = $(this).parent();
-                let input = $('input',parent).val();
-                let x = parent.find('.one');
-                x.css('display','block');
-                $(x).val(++input);
-                // toastFun();
-                $(this).html('');
-                $(this).wrapInner('<i class="fas fa-plus-circle" style="color:green;" title="order more?"></i>');
-            });
-    }); 
+}  -->
 </script>
 </body>
 </html>

@@ -134,9 +134,9 @@ main{
 
 footer{
     text-align: center;
-    margin-top: 15px;
-    font-size: 2em;
-    background-color: khaki;
+    margin: 20px 0px 5px 0px;
+    /* font-size: 2em; */
+    /* background-color: khaki; */
 }
 
 .contants{

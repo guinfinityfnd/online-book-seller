@@ -2,11 +2,10 @@ const express = require('express');
 const mongoose = require('mongoose');
 const Blog = require('./models/blog');
 const app = express();
-const fs = require('fs');
 
 const port = process.env.PORT || 3000;
 
-mogodatabase connection 
+//mogodatabase connection 
 const url = 'mongodb+srv://virtualnetwork:mogodatabasepassword@cluster0.rfszu.mongodb.net/netnija?retryWrites=true&w=majority';
 mongoose.connect(url)
     .then((result) => app.listen(port))

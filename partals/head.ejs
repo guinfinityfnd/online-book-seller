@@ -2,7 +2,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://kit.fontawesome.com/bfc3ef21f1.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script>
+        $(document).ready(function () {
+            $("span").click(function (){
+                // $(this).children('img').addClass('affect');
+                    $(this).children('img').attr('src','./images/icons8-love-48.png');
+            });
+        $('.ord').click(function () {
+                     let parent = $(this).parent();
+                    let input = $('input',parent).val();
+                    let x = parent.find('.one');
+                    x.css('display','inline');
+                    $(x).val(++input);
+                    // toastFun();
+                    $(this).html('');
+                    $(this).wrapInner('<i class="fas fa-plus-circle" style="color:green;" title="order more?"></i>');
+                });
+        });
+    </script>
     <title>bookshop</title>
 </head>
